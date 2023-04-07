@@ -1,9 +1,15 @@
 import "./Hero.styles.scss";
 import personalPhoto from "../../images/personal-img-cut.png";
+import socialLinks from "../../json/SocialLinks";
+import { useGlobalContext } from "../../context";
 
 const Hero = () => {
+  const { myRef } = useGlobalContext();
+
+  let account = socialLinks[0];
+
   return (
-    <section class="section-hero" id="home">
+    <section ref={myRef} class="section-hero" id="home">
       <div class="hero">
         <div class="hero-text-box">
           <h1 class="heading-primary">
@@ -24,7 +30,7 @@ const Hero = () => {
         <div class="social-media-box">
           <ul class="social-media-icon">
             <li>
-              <a class="footer-link" href="#">
+              <a class="footer-link" target="blank" href={account.github}>
                 <ion-icon
                   class="social-icon md hydrated"
                   name="logo-github"
@@ -34,32 +40,38 @@ const Hero = () => {
               </a>
             </li>
             <li>
-              <a class="footer-link" href="#">
+              <a
+                class="footer-link"
+                target="blank"
+                href={account.frontendMentor}
+              >
                 <ion-icon
                   class="social-icon md hydrated"
-                  name="logo-instagram"
+                  name="code-slash"
                   role="img"
-                  aria-label="logo instagram"
+                  aria-label="code slash"
                 ></ion-icon>
               </a>
             </li>
+
             <li>
-              <a class="footer-link" href="#">
+              <a class="footer-link" target="blank" href={account.youtube}>
                 <ion-icon
                   class="social-icon md hydrated"
-                  name="logo-facebook"
+                  name="logo-youtube"
                   role="img"
-                  aria-label="logo facebook"
+                  aria-label="logo youtube"
                 ></ion-icon>
               </a>
             </li>
+
             <li>
-              <a class="footer-link" href="#">
+              <a class="footer-link" href={`mailto:${account.email}`}>
                 <ion-icon
                   class="social-icon md hydrated"
-                  name="logo-twitter"
+                  name="mail"
                   role="img"
-                  aria-label="logo twitter"
+                  aria-label="mail"
                 ></ion-icon>
               </a>
             </li>

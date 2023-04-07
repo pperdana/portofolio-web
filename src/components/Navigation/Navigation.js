@@ -1,41 +1,44 @@
+import { useGlobalContext } from "../../context";
 import "./Navigation.styles.scss";
 
 const Navigation = () => {
+  const { handleNav } = useGlobalContext();
+
   return (
     <>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
+      <nav className="main-nav">
+        <ul className="main-nav-list">
           <li>
-            <a class="main-nav-link" href="#home">
+            <a className="main-nav-link" href="#">
               Home
             </a>
           </li>
           <li>
-            <a class="main-nav-link" href="#about">
+            <a className="main-nav-link" href="#about">
               About
             </a>
           </li>
           <li>
-            <a class="main-nav-link" href="#skills">
+            <a className="main-nav-link" href="#skills">
               Skills
             </a>
           </li>
           <li>
-            <a class="main-nav-link" href="#projects">
+            <a className="main-nav-link" href="#projects">
               Projects
             </a>
           </li>
           <li>
-            <a class="main-nav-link" href="#contact">
+            <a className="main-nav-link" href="#contact">
               Contact
             </a>
           </li>
         </ul>
       </nav>
 
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      <button className="btn-mobile-nav" onClick={handleNav}>
+        <ion-icon class="icon-mobile-nav menu" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav close" name="close-outline"></ion-icon>
       </button>
     </>
   );

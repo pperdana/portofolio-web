@@ -6,9 +6,13 @@ import todoLsImg from "../../images/projects/todo-list.png";
 import drumKitImg from "../../images/projects/drum-kit.png";
 import omFoodImg from "../../images/projects/omnifood.png";
 
-import blankImg from "../../images/blank.png";
+import projectsLinks from "../../json/ProjectsLinks";
+import socialLinks from "../../json/SocialLinks";
 
 const Projects = () => {
+  let project = projectsLinks[0];
+  let account = socialLinks[0];
+
   return (
     <>
       <section className="section-projects" id="projects">
@@ -37,12 +41,12 @@ const Projects = () => {
             </div>
 
             <div className="project-button">
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.crown.github}>
                 <ion-icon class="project-icon" name="logo-github"></ion-icon>
                 <span class="icon-text">Code</span>
               </a>
 
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.crown.live}>
                 <ion-icon class="project-icon" name="radio-outline"></ion-icon>
                 <span class="icon-text">Live Site</span>
               </a>
@@ -80,12 +84,12 @@ const Projects = () => {
             </div>
 
             <div className="project-button">
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.keeper.github}>
                 <ion-icon class="project-icon" name="logo-github"></ion-icon>
                 <span class="icon-text">Code</span>
               </a>
 
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.keeper.live}>
                 <ion-icon class="project-icon" name="radio-outline"></ion-icon>
                 <span class="icon-text">Live Site</span>
               </a>
@@ -107,12 +111,12 @@ const Projects = () => {
             </div>
 
             <div className="project-button">
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.todoList.github}>
                 <ion-icon class="project-icon" name="logo-github"></ion-icon>
                 <span class="icon-text">Code</span>
               </a>
 
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.todoList.live}>
                 <ion-icon class="project-icon" name="radio-outline"></ion-icon>
                 <span class="icon-text">Live Site</span>
               </a>
@@ -150,12 +154,12 @@ const Projects = () => {
             </div>
 
             <div className="project-button">
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.drumKit.github}>
                 <ion-icon class="project-icon" name="logo-github"></ion-icon>
                 <span class="icon-text">Code</span>
               </a>
 
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.drumKit.live}>
                 <ion-icon class="project-icon" name="radio-outline"></ion-icon>
                 <span class="icon-text">Live Site</span>
               </a>
@@ -178,12 +182,12 @@ const Projects = () => {
             </div>
 
             <div className="project-button">
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.ominfood.github}>
                 <ion-icon class="project-icon" name="logo-github"></ion-icon>
                 <span class="icon-text">Code</span>
               </a>
 
-              <a className="btn" href="#">
+              <a className="btn" target="_blank" href={project.ominfood.live}>
                 <ion-icon class="project-icon" name="radio-outline"></ion-icon>
                 <span class="icon-text">Live Site</span>
               </a>
@@ -202,11 +206,15 @@ const Projects = () => {
 
         <p class="all-projects">
           See more of my projects on{" "}
-          <a href="#" class="all-projects-link">
+          <a href={account.github} target="_blank" class="all-projects-link">
             github
           </a>{" "}
-          or{" "}
-          <a href="#" class="all-projects-link">
+          and{" "}
+          <a
+            href={account.frontendMentor}
+            target="_blank"
+            class="all-projects-link"
+          >
             frontend mentor
           </a>
         </p>

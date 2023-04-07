@@ -1,7 +1,12 @@
 import "./Footer.styles.scss";
 import logo from "../../images/logo.png";
+import socialLinks from "../../json/SocialLinks";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
+  let account = socialLinks[0];
+
   return (
     <footer class="footer">
       <div class="container grid grid--footer">
@@ -11,8 +16,8 @@ const Footer = () => {
           </a>
 
           <p class="copyright">
-            Copyright &copy;<span class="year">2027</span> by Panji Perdana. All
-            rights reserved.
+            Copyright &copy;<span class="year">{year}</span> by Panji Perdana.
+            All rights reserved.
           </p>
         </div>
 
@@ -63,7 +68,7 @@ const Footer = () => {
           <p class="footer-heading">Get in touch</p>
           <ul class="social-links">
             <li>
-              <a class="footer-link" href="#">
+              <a class="footer-link" target="blank" href={account.github}>
                 <ion-icon
                   class="social-icon md hydrated"
                   name="logo-github"
@@ -72,33 +77,40 @@ const Footer = () => {
                 ></ion-icon>
               </a>
             </li>
+
             <li>
-              <a class="footer-link" href="#">
+              <a
+                class="footer-link"
+                target="blank"
+                href={account.frontendMentor}
+              >
                 <ion-icon
                   class="social-icon md hydrated"
-                  name="logo-instagram"
+                  name="code-slash"
                   role="img"
-                  aria-label="logo instagram"
+                  aria-label="code slash"
                 ></ion-icon>
               </a>
             </li>
+
             <li>
-              <a class="footer-link" href="#">
+              <a class="footer-link" target="blank" href={account.youtube}>
                 <ion-icon
                   class="social-icon md hydrated"
-                  name="logo-facebook"
+                  name="logo-youtube"
                   role="img"
-                  aria-label="logo facebook"
+                  aria-label="logo youtube"
                 ></ion-icon>
               </a>
             </li>
+
             <li>
-              <a class="footer-link" href="#">
+              <a class="footer-link" href={`mailto:${account.email}`}>
                 <ion-icon
                   class="social-icon md hydrated"
-                  name="logo-twitter"
+                  name="mail"
                   role="img"
-                  aria-label="logo twitter"
+                  aria-label="mail"
                 ></ion-icon>
               </a>
             </li>

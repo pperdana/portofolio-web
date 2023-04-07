@@ -4,7 +4,6 @@
   padding: 6.4rem 0 4.8rem;
 
   .container {
-    /* 1140px */
     max-width: 120rem;
     padding: 0 8rem;
     margin: 0 auto;
@@ -27,10 +26,7 @@
 
   .grid {
     display: grid;
-    // column-gap: 6.4rem;
     gap: 9.6rem 3.2rem;
-
-    /* margin-bottom: 9.6rem; */
   }
 
   .grid--2-cols {
@@ -66,7 +62,6 @@
 
   .project-button {
     display: flex;
-    // column-gap: 2.4rem;
     column-gap: 1.2rem;
 
     .btn:link,
@@ -97,10 +92,6 @@
         width: 2.4rem;
         height: 2.4rem;
       }
-
-      .icon-text {
-        // transition: all 0.3s;
-      }
     }
   }
 }
@@ -114,36 +105,30 @@
 
   .project-img {
     width: 70%;
-    /* z-index: 10; */
     transition: all 0.3s;
   }
   .project-img:hover {
     box-shadow: 0 1.4rem 1.8rem rgba(0, 0, 0, 0.075);
     filter: brightness(98%);
-
-    // opacity: 50%;
   }
 }
 
 .all-projects {
-  // display: inline-block;
   max-width: 120rem;
   padding: 0 8rem;
   margin: 8rem auto 0;
   text-align: center;
   font-size: 2rem;
-  color: $grey-color-dark-2;
-
-  font-weight: $weight-500;
+  color: #0e7e92;
+  font-weight: $weight-600;
 
   &-link:link,
   &-link:visited {
     font-size: inherit;
-    color: #1098ad;
+    color: #41464a;
     font-weight: $weight-700;
 
     border-bottom: 2px solid currentColor;
-    // background-color: $main-color-light-3;
     text-decoration: none;
 
     transition: all 0.3s;
@@ -151,7 +136,7 @@
 
   &-link:hover,
   &-link:active {
-    color: $main-color-dark-2;
+    color: $grey-color-dark-1;
     border-bottom: none;
   }
 }

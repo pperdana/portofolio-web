@@ -7,11 +7,9 @@
 
 .hero {
   max-width: 130rem;
-  // height: 100vh;
 
   margin: 0 auto;
   padding: 0 8rem;
-
   display: grid;
   grid-template-columns: 6fr 4fr;
   gap: 3.2rem 8rem;
@@ -19,9 +17,6 @@
 }
 
 .hero-text-box {
-  // display: flex;
-  // flex-direction: column;
-
   .heading-primary {
     font-size: 4.4rem;
     line-height: 1.2;
@@ -31,12 +26,10 @@
   .hero-description {
     font-size: 2.4rem;
     line-height: 1.4;
-    // margin-bottom: 4.8rem;
   }
 }
 
 .hero-img-box {
-  // position: relative;
   border-radius: 2px;
   overflow: hidden;
   transition: all 0.5s;
@@ -48,7 +41,6 @@
   .hero-img {
     background-color: transparent;
     width: 100%;
-    // z-index: 10;
   }
 }
 
@@ -60,9 +52,14 @@
     justify-content: center;
 
     .social-icon {
-      color: $grey-color-dark-3;
+      color: $grey-color-dark-2;
       height: 2.4rem;
       width: 2.4rem;
+
+      transition: all 0.5s;
+    }
+    .social-icon:hover {
+      color: #1098ad;
     }
   }
 }
