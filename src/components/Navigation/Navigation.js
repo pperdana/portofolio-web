@@ -2,34 +2,55 @@ import { useGlobalContext } from "../../context";
 import "./Navigation.styles.scss";
 
 const Navigation = () => {
-  const { handleNav } = useGlobalContext();
+  const { handleNav, setToggleNav, toggleNav } = useGlobalContext();
+
+  const handleClick = (e) => {
+    console.log(e.view.screen.width);
+    // if (e.view.screen.width <= 576) handleNav();
+
+    // get the parent class
+    let clickedElement = e.target;
+    let classNames = [];
+
+    while (clickedElement) {
+      if (clickedElement.classList) {
+        classNames.push(clickedElement.classList[0]);
+      }
+      clickedElement = clickedElement.parentNode;
+    }
+    classNames.join(", ");
+
+    if (classNames.includes("nav-open")) {
+      handleNav();
+    }
+  };
 
   return (
     <>
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>
-            <a className="main-nav-link" href="#">
+            <a className="main-nav-link" href="#" onClick={handleClick}>
               Home
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="#about">
+            <a className="main-nav-link" href="#about" onClick={handleClick}>
               About
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="#skills">
+            <a className="main-nav-link" href="#skills" onClick={handleClick}>
               Skills
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="#projects">
+            <a className="main-nav-link" href="#projects" onClick={handleClick}>
               Projects
             </a>
           </li>
           <li>
-            <a className="main-nav-link" href="#contact">
+            <a className="main-nav-link" href="#contact" onClick={handleClick}>
               Contact
             </a>
           </li>

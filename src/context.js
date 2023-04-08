@@ -21,6 +21,7 @@ const AppProvider = ({ children }) => {
         myRef,
         inViewNav,
         toggleNav,
+        setToggleNav,
         handleNav,
       }}
     >

@@ -28,9 +28,10 @@ const Projects = () => {
           <div className="project-text-box">
             <h3 className="heading-tertiary">Crown Clothing</h3>
             <p className="project-description">
-              It's a clone of a large e-commerce, which has functionality such
-              as authentication, adding payments, store state, store user
-              information etc.
+              Crown Clothing is an a clothing e-commerce web app that allows
+              businesses to sell clothing products online. This web include
+              features such as a product catalog, shopping cart, payment gateway
+              integration, and secure checkout process.
             </p>
 
             <div className="project-tags">
@@ -74,8 +75,9 @@ const Projects = () => {
           <div className="project-text-box">
             <h3 className="heading-tertiary">Keeper App</h3>
             <p className="project-description">
-              It's clone of google keep, so whenever you have new idea you can
-              add new note into you keeper app.
+              Keeper App is clone of google keep. It is an website that helps
+              users to capture and organize their thoughts and ideas and store
+              important information.
             </p>
 
             <div className="project-tags">
@@ -100,9 +102,10 @@ const Projects = () => {
           <div className="project-text-box">
             <h3 className="heading-tertiary">Todo List App</h3>
             <p className="project-description">
-              It's a clone of a large e-commerce, which has functionality such
-              as authentication, adding payments, store state, store user
-              information etc.
+              Todo list is a website that allows users to create, manage, and
+              track tasks and activities that need to be completed. This website
+              help to stay organized, prioritize tasks, and increase
+              productivity.
             </p>
 
             <div className="project-tags">
@@ -144,8 +147,9 @@ const Projects = () => {
           <div className="project-text-box">
             <h3 className="heading-tertiary">Drum Kit</h3>
             <p className="project-description">
-              It's clone of google keep, so whenever you have new idea you can
-              add new note into you keeper app.
+              This drum kit web is a web application that simulates the sounds
+              of a drum kit. These apps are designed to provide users with a
+              realistic and customizable drumming experience.
             </p>
 
             <div className="project-tags">
@@ -170,9 +174,9 @@ const Projects = () => {
           <div className="project-text-box">
             <h3 className="heading-tertiary">Omnifood</h3>
             <p className="project-description">
-              It's a clone of a large e-commerce, which has functionality such
-              as authentication, adding payments, store state, store user
-              information etc.
+              This Omnifood web is single web page for startup. It's design to
+              deliver custom healthy meal plans. This web is beautiful, modern,
+              and clean website that look professional and trustworthy company.
             </p>
 
             <div className="project-tags">

@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Logo from "../Logo/Logo";
 import "./Header.styles.scss";
 import Navigation from "../Navigation/Navigation";
@@ -9,7 +7,7 @@ const Header = () => {
   const { toggleNav } = useGlobalContext();
 
   return (
-    <header className={`${toggleNav ? "header nav-open" : "header"}`}>
+    <header className={`${toggleNav ? "nav-open header" : "header"}`}>
       <Logo />
       <Navigation />
     </header>
