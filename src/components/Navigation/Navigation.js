@@ -2,7 +2,7 @@ import { useGlobalContext } from "../../context";
 import "./Navigation.styles.scss";
 
 const Navigation = () => {
-  const { handleNav, setToggleNav, toggleNav } = useGlobalContext();
+  const { handleNav } = useGlobalContext();
 
   const handleClick = (e) => {
     console.log(e.view.screen.width);

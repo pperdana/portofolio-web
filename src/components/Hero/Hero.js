@@ -54,7 +54,7 @@ const Hero = () => {
               </a>
             </li>
 
-            <li>
+            {/* <li>
               <a class="footer-link" target="blank" href={account.youtube}>
                 <ion-icon
                   class="social-icon md hydrated"
@@ -63,7 +63,7 @@ const Hero = () => {
                   aria-label="logo youtube"
                 ></ion-icon>
               </a>
-            </li>
+            </li> */}
 
             <li>
               <a class="footer-link" href={`mailto:${account.email}`}>
