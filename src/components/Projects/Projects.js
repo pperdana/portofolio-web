@@ -12,7 +12,7 @@ import socialLinks from "../../json/SocialLinks";
 const Projects = () => {
   let project = projectsLinks[0];
   let account = socialLinks[0];
-
+  console.log(project);
   return (
     <>
       <section className="section-projects" id="projects">

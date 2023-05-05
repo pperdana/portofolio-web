@@ -17,8 +17,8 @@ let projectsLinks = [
       live: "https://drumkit-pperdana.netlify.app",
     },
     ominfood: {
-      github: "",
-      live: "",
+      github: "https://github.com/pperdana/omnifood",
+      live: "https://omnifood-pperdana.netlify.app",
     },
   },
 ];
